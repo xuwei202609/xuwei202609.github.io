@@ -1,0 +1,114 @@
+{
+  "chapters": [
+    "Basic DEI",
+    "Cultural Diversity",
+    "Unconscious Bias & Anti-Discrimination"
+  ],
+  "rolePlay": {
+    "intro": "16:509",
+    "video": "role-video",
+    "source": "assets/role.mp4"
+  },
+  "screens": [
+    {
+      "id": "13:2",
+      "title": "D01 · Thoughtful service. Human connection."
+    },
+    {
+      "id": "13:35",
+      "title": "Module 01 · Basic DEI"
+    },
+    {
+      "id": "14:17",
+      "title": "D03 · More learning is on its way."
+    },
+    {
+      "id": "14:31",
+      "title": "D04 · Your achievements"
+    },
+    {
+      "id": "14:45",
+      "title": "D05 · Your AI Companion"
+    },
+    {
+      "id": "14:59",
+      "title": "D06 · My learning"
+    },
+    {
+      "id": "14:73",
+      "title": "D07 · Watch. Reflect. Include."
+    },
+    {
+      "id": "14:90",
+      "title": "D08 · Learning video in progress"
+    },
+    {
+      "id": "14:111",
+      "title": "D09 · Ready to put it into practice?"
+    },
+    {
+      "id": "14:130",
+      "title": "D10 · Your video could not load"
+    },
+    {
+      "id": "14:144",
+      "title": "D11 · Save and leave?"
+    },
+    {
+      "id": "14:160",
+      "title": "D12 · We could not save your progress"
+    },
+    {
+      "id": "16:509",
+      "title": "Role play · Role play"
+    },
+    {
+      "id": "chapter-2",
+      "title": "Module 02 · Cultural Diversity"
+    },
+    {
+      "id": "chapter-2-video",
+      "title": "Chapter 2 · Cultural Diversity"
+    },
+    {
+      "id": "chapter-2-playing",
+      "title": "Chapter 2 · Cultural Diversity"
+    },
+    {
+      "id": "chapter-2-complete",
+      "title": "Chapter 2 · Cultural Diversity"
+    },
+    {
+      "id": "chapter-2-error",
+      "title": "Chapter 2 · Cultural Diversity"
+    },
+    {
+      "id": "chapter-3",
+      "title": "Module 03 · Unconscious Bias & Anti-Discrimination"
+    },
+    {
+      "id": "chapter-3-video",
+      "title": "Chapter 3 · Unconscious Bias & Anti-Discrimination"
+    },
+    {
+      "id": "chapter-3-playing",
+      "title": "Chapter 3 · Unconscious Bias & Anti-Discrimination"
+    },
+    {
+      "id": "chapter-3-complete",
+      "title": "Chapter 3 · Unconscious Bias & Anti-Discrimination"
+    },
+    {
+      "id": "chapter-3-error",
+      "title": "Chapter 3 · Unconscious Bias & Anti-Discrimination"
+    },
+    {
+      "id": "role-video",
+      "title": "Role play · Put what you have learned into practice!"
+    },
+    {
+      "id": "role-video-error",
+      "title": "Role play · Your video could not load"
+    }
+  ]
+}

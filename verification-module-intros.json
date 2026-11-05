@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-03",
+  "scope": "Three module introduction implementations",
+  "modules": [
+    "Basic DEI",
+    "Cultural Diversity",
+    "Unconscious Bias & Anti-Discrimination"
+  ],
+  "browserChecks": [
+    "all three modules at 1280x800 and 390x844",
+    "module 3 at 320x640 and 768x1024",
+    "module images loaded",
+    "three Start learning buttons mount the correct video; readyState 4",
+    "return to courses and save-and-leave confirmation",
+    "locked direct route returns to homepage",
+    "mobile menu opens and Escape closes"
+  ],
+  "staticChecks": {
+    "uniqueRoutes": 25,
+    "localAssets": 22,
+    "missingAssets": 0,
+    "unknownTargets": 0,
+    "module2OriginalPreserved": true,
+    "scriptSyntax": "passed"
+  },
+  "notRepeated": [
+    "complete end-to-end viewing of all videos",
+    "AI service calls"
+  ]
+}

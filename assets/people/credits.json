@@ -1,0 +1,50 @@
+{
+  "description": "Fictional digital hotel colleagues. Existing portraits reused from the project outputs. Front-office portrait generated with built-in ImageGen. No nationality is assigned based on appearance.",
+  "people": [
+    {
+      "id": "front-desk",
+      "role": "Front desk",
+      "source": "Existing project asset: outputs/luxury-hotel-asian-female-employee-beige-blazer-original-4k.png"
+    },
+    {
+      "id": "executive-chef",
+      "role": "Executive chef",
+      "source": "Existing project asset: outputs/luxury-hotel-standing-executive-chef-original-4k.png"
+    },
+    {
+      "id": "housekeeping",
+      "role": "Housekeeping",
+      "source": "Existing project asset: outputs/luxury-hotel-housekeeping-employee-original-4k.png"
+    },
+    {
+      "id": "guest-relations",
+      "role": "Guest relations",
+      "source": "Existing project asset: outputs/luxury-hotel-hijabi-female-employee-original-4k.png"
+    },
+    {
+      "id": "front-office",
+      "role": "Front office",
+      "source": "ImageGen, original fictional character"
+    },
+    {
+      "id": "concierge",
+      "role": "Concierge",
+      "source": "Existing project asset: outputs/luxury-hotel-front-desk-male-curly-original-4k.png"
+    },
+    {
+      "id": "reception",
+      "role": "Reception",
+      "source": "Existing project asset: outputs/luxury-hotel-male-employee-gray-suit-original-4k.png"
+    },
+    {
+      "id": "guest-services",
+      "role": "Guest services",
+      "source": "Existing project asset: outputs/luxury-hotel-wheelchair-employee-original-4k.png"
+    },
+    {
+      "id": "hospitality",
+      "role": "Hospitality",
+      "source": "Existing project asset: outputs/luxury-hotel-female-employee-original-identity-4k.png"
+    }
+  ]
+}

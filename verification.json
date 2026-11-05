@@ -1,0 +1,95 @@
+{
+  "updated": "2026-11-02",
+  "ok": true,
+  "functional": {
+    "ok": true,
+    "checks": [
+      "Equal responsive headings stay in left column; no Explore button; fresh users have no role entry or completion message",
+      "One or two completed chapters never reveal role entry",
+      "Third completion returns home; dark image overlay opens replacement role introduction with keyboard support",
+      "Role progress resumes after refresh; forward seek, rate change, fake ended and early navigation cannot bypass viewing",
+      "Reflection draft persists, blank submission disabled; completion requires submit; each success sentence occupies a desktop line",
+      "Earlier three-video progress migrates; old dialogue completion cannot complete new role video/reflection",
+      "Failed persistence shows save error; successful retry commits reflection and completion without losing answer",
+      "Old dialogue/coaching content and Rewatch buttons removed; all 25 page link destinations exist"
+    ],
+    "errors": []
+  },
+  "playback": {
+    "ok": true,
+    "media": {
+      "ended": true,
+      "time": 37.133333,
+      "duration": 37.133333,
+      "width": 3790,
+      "height": 2160
+    },
+    "successfulSubmission": true,
+    "completionHome": true,
+    "persistsOnRefresh": true,
+    "errors": []
+  },
+  "reflectionStorage": "Current browser local storage; no external submission endpoint",
+  "pageLayouts": {
+    "ok": true,
+    "count": 25,
+    "widths": [
+      1920,
+      1366,
+      768,
+      390
+    ],
+    "errors": []
+  },
+  "aiCompanion": {
+    "updated": "2026-11-02",
+    "live": {
+      "ok": true,
+      "model": "deepseek-v4.1-flash",
+      "realResponse": true,
+      "multiTurnContext": true,
+      "historyRestore": true,
+      "newChat": true,
+      "viewports": [
+        1920,
+        1440,
+        1366,
+        1024,
+        768,
+        390,
+        320
+      ],
+      "privateFilesBlocked": true,
+      "videoByteRanges": true,
+      "errors": []
+    },
+    "clientErrors": {
+      "ok": true,
+      "retryNoDuplicates": true,
+      "stop": true,
+      "safeFormatting": true,
+      "errors": []
+    },
+    "server": {
+      "ok": true,
+      "fixedModel": true,
+      "thinkingDisabled": true,
+      "invalidInputBlocked": true,
+      "foreignOriginsBlocked": true,
+      "safeErrors": true,
+      "incompleteStreamsHandled": true,
+      "rateLimit": true
+    },
+    "pages": {
+      "ok": true,
+      "screens": 25,
+      "viewports": [
+        1920,
+        1366,
+        768,
+        390
+      ],
+      "errors": []
+    }
+  }
+}

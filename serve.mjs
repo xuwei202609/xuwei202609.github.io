@@ -1,0 +1,14 @@
+import http from 'node:http';
+import fs from 'node:fs';
+import {stat,realpath} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createChatService} from './chat-server.mjs';
+const root=path.dirname(fileURLToPath(import.meta.url)),port=Number(process.argv[2]||4173);
+const chat=await createChatService({root,port});
+const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.webp':'image/webp','.jpeg':'image/jpeg','.jpg':'image/jpeg','.png':'image/png','.ttf':'font/ttf','.mp4':'video/mp4'};
+const publicFiles=new Set(['index.html','screens.html','styles.css','learning.css','chat-companion.css','config.js','reflection-submissions.js','ai-activity.js','learning-state.js','app.js','chat-companion.js','belong-redesign.css','belong-redesign.js','module-intros.css']);
+http.createServer(async(req,res)=>{try{const url=new URL(req.url,'http://127.0.0.1');if(await chat.handle(req,res,url))return;if(!['GET','HEAD'].includes(req.method)){res.writeHead(405,{Allow:'GET, HEAD'});res.end();return;}const relative=decodeURIComponent(url.pathname==='/'?'index.html':url.pathname.slice(1));if(relative.split(/[\\/]/).some(part=>part.startsWith('.'))||(!publicFiles.has(relative)&&!/^assets\/(?:[a-zA-Z0-9_-]+\/)*[a-zA-Z0-9_.-]+$/.test(relative))){res.writeHead(404);res.end('Not found');return;}const file=path.resolve(root,relative);if(!file.startsWith(root+path.sep)||!(await realpath(file)).startsWith(root+path.sep)){res.writeHead(403);res.end();return;}const info=await stat(file);if(!info.isFile()||!types[path.extname(file)])throw Error('not public');const headers={'Content-Type':types[path.extname(file)],'Cache-Control':'no-store','Accept-Ranges':'bytes','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'};let start=0,end=info.size-1,status=200;
+if(req.headers.range){const m=/^bytes=(\d*)-(\d*)$/.exec(req.headers.range);if(!m||(!m[1]&&!m[2])){res.writeHead(416,{'Content-Range':`bytes */${info.size}`});res.end();return;}if(!m[1])start=Math.max(0,info.size-Number(m[2]));else{start=Number(m[1]);if(m[2])end=Math.min(end,Number(m[2]));}if(start>end||start>=info.size){res.writeHead(416,{'Content-Range':`bytes */${info.size}`});res.end();return;}status=206;headers['Content-Range']=`bytes ${start}-${end}/${info.size}`;}
+headers['Content-Length']=end-start+1;res.writeHead(status,headers);if(req.method==='HEAD'){res.end();return;}const stream=fs.createReadStream(file,{start,end});stream.on('error',()=>res.destroy());res.on('close',()=>stream.destroy());stream.pipe(res);
+}catch{if(!res.headersSent)res.writeHead(404);res.end('Not found');}}).listen(port,'127.0.0.1',()=>{console.log(`BELONG: http://127.0.0.1:${port}/#14:45`);console.log('AI connection: '+(chat.configured()?'configured':'awaiting local setup'));console.log(`Local API setup: http://127.0.0.1:${port}${chat.setupPath}`);});
