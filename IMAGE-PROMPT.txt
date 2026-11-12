@@ -1,0 +1,5 @@
+Tool: built-in ImageGen
+Output: assets/people/front-office-original.png
+Web asset: assets/people/front-office.jpg
+
+Create a single premium portrait asset for an inclusive luxury hotel training website. Subject: an original fictional Black woman hotel front office manager, around age 52, natural short salt-and-pepper coily hair, subtle age lines, warm confident gentle smile, looking directly into camera. She wears an impeccably tailored dark navy hotel uniform jacket, ivory blouse and very small plain gold lapel pin, no name tag or lettering. Composition: vertical 2:3 portrait, from a little above head to mid waist, both shoulders fully inside frame, centered with generous space above head. Seamless warm white studio backdrop (#f6f5f0), soft warm daylight, premium editorial character portrait, highly detailed lifelike digital human, natural realistic skin texture, sophisticated hospitality brand aesthetic, no exaggerated cartoon or plastic skin. The clothing and face must both be very sharp. No text, watermark, logos, borders or graphic layout.

@@ -1,0 +1,34 @@
+.practice-screen { background: #fffdf8 !important; color: #302821; }
+.practice-screen[hidden] { display: none !important; }
+.practice-screen .practice-content {
+  display: block;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px;
+  box-sizing: border-box;
+}
+.practice-eyebrow { font: 400 14px/20px Arimo, Arial, sans-serif; color: #72665a; margin: 0 0 24px; }
+.practice-content h1 { font: 400 46px/56px Lora, serif; margin: 0 0 24px; }
+.practice-progress { width: 100%; max-width: 1000px; height: 8px; background: #e2d8c9; margin: 0 0 32px; }
+.practice-progress span { display: block; height: 100%; background: #624932; width: 0; }
+.practice-form { width: 100%; max-width: 1000px; }
+.practice-question { border: 0; padding: 0; margin: 0 0 48px; min-width: 0; }
+.practice-question legend { display: block; width: 100%; padding: 24px; margin-bottom: 24px; box-sizing: border-box; background: #f5efe4; white-space: pre-wrap; font: 400 24px/32px Lora, serif; }
+.practice-option { display: flex; align-items: flex-start; gap: 16px; border: 1px solid #8a7966; border-radius: 4px; background: #fffdf8; padding: 24px; margin-bottom: 24px; font: 400 16px/25px Arimo, Arial, sans-serif; cursor: pointer; }
+.practice-option:has(input:checked) { background: #e2d8c9; border-color: #624932; box-shadow: inset 0 0 0 1px #624932; }
+.practice-option input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.practice-option:has(input:focus-visible) { outline: 3px solid #2876a1; outline-offset: 3px; }
+.practice-letter { flex: 0 0 20px; }
+.practice-option-text { min-width: 0; overflow-wrap: anywhere; }
+.practice-actions { display: flex; gap: 24px; align-items: flex-start; flex-wrap: wrap; }
+.practice-button { display: flex; align-items: center; justify-content: center; width: 240px; max-width: 100%; min-height: 52px; padding: 16px; border: 0; border-radius: 2px; background: #624932; color: #fffdf8; font: 400 14px/20px Arimo, Arial, sans-serif; cursor: pointer; }
+.practice-button:disabled { background: #d9d1c6; color: #80756b; cursor: not-allowed; }
+.practice-success, .practice-status { font: 400 16px/25px Arimo, Arial, sans-serif; margin: 16px 0 0; }
+.practice-success[hidden] { display: none; }
+@media (max-width: 760px) {
+  .practice-screen .practice-content { padding: 32px 24px; }
+  .practice-content h1 { font-size: 36px; line-height: 44px; }
+  .practice-question legend { padding: 20px; font-size: 20px; line-height: 28px; }
+  .practice-option { padding: 20px; gap: 12px; }
+}
